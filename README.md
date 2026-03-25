@@ -5,13 +5,13 @@ This repository contains my solutions to the **NeetCode 150** problems. I aim to
 * Prepare for coding interviews
 * Improve problem-solving skills
 ---
-## 🚀 Progress: 7 / 150
+## 🚀 Progress: 8 / 150
 ---
 ## 📊 Progress by Category
 | Category            | Completed |
 | ------------------- | --------- |
 | Arrays              | 7         |
-| Two Pointers        | 0         |
+| Two Pointers        | 1         |
 | Sliding Window      | 0         |
 | Stack               | 0         |
 | Binary Search       | 0         |
@@ -31,6 +31,9 @@ This repository contains my solutions to the **NeetCode 150** problems. I aim to
 * Top K Frequent Elements (HashMap + Bucket Sort, O(n))
 * Product of Array Except Self (O(n))
 * Longest Consecutive Sequence (HashSet, O(n))
+
+### Two Pointers
+* Valid Palindrome (Two Pointers, O(n))
 ---
 ## 🧠 Covered Patterns
 * HashMap
