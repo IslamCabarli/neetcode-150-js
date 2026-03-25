@@ -5,12 +5,12 @@ This repository contains my solutions to the **NeetCode 150** problems. I aim to
 * Prepare for coding interviews
 * Improve problem-solving skills
 ---
-## 🚀 Progress: 5 / 150
+## 🚀 Progress: 7 / 150
 ---
 ## 📊 Progress by Category
 | Category            | Completed |
 | ------------------- | --------- |
-| Arrays              | 5         |
+| Arrays              | 7         |
 | Two Pointers        | 0         |
 | Sliding Window      | 0         |
 | Stack               | 0         |
@@ -29,6 +29,8 @@ This repository contains my solutions to the **NeetCode 150** problems. I aim to
 * Two Sum (HashMap, O(n))
 * Group Anagrams (HashMap, O(n*k))
 * Top K Frequent Elements (HashMap + Bucket Sort, O(n))
+* Product of Array Except Self (O(n))
+* Longest Consecutive Sequence (HashSet, O(n))
 ---
 ## 🧠 Covered Patterns
 * HashMap
