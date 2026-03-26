@@ -7,7 +7,6 @@
  * - Use two pointers (left and right) starting from both ends
  * - Calculate the area using the minimum height and distance between pointers
  * - Move the pointer pointing to the shorter height inward
- *   to potentially find a larger area
  *
  * Time Complexity: O(n)
  * Space Complexity: O(1)
