@@ -10,7 +10,7 @@ This repository contains my solutions to the **NeetCode 150** problems. I aim to
 
 ---
 
-## 🚀 Progress: 8 / 150
+## 🚀 Progress: 9 / 150
 
 ---
 
