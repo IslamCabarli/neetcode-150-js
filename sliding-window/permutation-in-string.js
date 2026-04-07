@@ -17,41 +17,33 @@ class Solution {
      * @return {boolean}
      */
     checkInclusion(s1, s2) {
-        
-        let map = new Map();
-        for (let char of s1) {
-            map.set(char, (map.get(char) || 0) + 1);
-        }
-        let left = 0;
-        for (let right = 0; right < s2.length; right++) {
-            let char = s2[right];
-            if (map.has(char)) {
-                map.set(char, map.get(char) - 1);
-            }
-            if (right - left + 1 > s1.length) {
-                let leftChar = s2[left];
-                if (map.has(leftChar)) {
-                    map.set(leftChar, map.get(leftChar) + 1);
-                }
-                left++;
-            }
-            if (right - left + 1 === s1.length) {
-                let allZero = true;
-                for (let count of map.values()) {
-                    if (count !== 0) {
-                        allZero = false;
-                        break;
-                    }
-                }
-                if (allZero) {
-                    return true;
-                }
-            }
-        }
-        return false;
+    let map = new Map();
+    for (let c of s1) map.set(c, (map.get(c) || 0) + 1);
 
-        
+    let left = 0, matched = 0;
+
+    for (let right = 0; right < s2.length; right++) {
+        let char = s2[right];
+
+        if (map.has(char)) {
+            map.set(char, map.get(char) - 1);
+            if (map.get(char) === 0) matched++;
+        }
+
+        if (right >= s1.length) {
+            let leftChar = s2[left];
+            if (map.has(leftChar)) {
+                if (map.get(leftChar) === 0) matched--;
+                map.set(leftChar, map.get(leftChar) + 1);
+            }
+            left++;
+        }
+
+        if (matched === map.size) return true;
     }
+
+    return false;
+}
 }
 
 
